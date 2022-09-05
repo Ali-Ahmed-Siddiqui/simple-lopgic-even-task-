@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3><b> <u>i am creating simple logic  task:</u></b>
+</h3>
+
+   
+ 
+    <form onsubmit="dosum();return false">
+
+        num1:<input id="num1" type="number"><b></b>
+      <button type="submit">sum</button>
+    </form>
+     <script>
+        function dosum() {
+            let firstnumber=Number(document.querySelector("#num1").value) 
+         
+            let submit =firstnumber % 2 ;
+    
+            document.querySelector("#result").innerHTML =submit;
+        } 
+     </script>
+      <h2 id="result"> </h2>
+<h3><b><U>Note:</b></U></h3>
+<h4>if result show result show "1"then your enter number is odd.</h4>
+<h4>if result show result show "0"then your enter number is even.</h4>
+<!-- <h4><b>.</b>if result show result show "1"then your enter number is odd</h4> -->
+</body>
+</html>
